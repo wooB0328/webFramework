@@ -1,28 +1,26 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: nykim
-  Date: 2022/12/13
-  Time: 12:55 오전
-  To change this template use File | Settings | File Templates.
---%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 <html>
-  <head>
-    <title>$Title$</title>
-  </head>
-  <body>
-    <p> <a href="${pageContext.request.contextPath}/offers"> Show current offers</a></p>
-    <p> <a href="${pageContext.request.contextPath}/createoffer"> Add a new offer</a></p>
+<head>
+  <title>학사 정보 시스템</title>
+  <link rel="stylesheet" type="text/css"
+        href="${pageContext.request.contextPath}/resources/css/home.css" >
+  <%@ include file="header.jsp" %>
+</head>
+<body>
+<div class="img-container">
+  <img src="${pageContext.request.contextPath}/resources/images/home.jpg" alt="Login Image">
+</div>
 
-    <c:if test="${pageContext.request.userPrincipal.name != null}">
-      <a href="javascript:document.getElementById('logout').submit()">Logout</a>
-    </c:if>
-
-    <form id="logout"  action="<c:url value="/logout" />"method="post">
-      <input type="hidden" name="${_csrf.parameterName}"value="${_csrf.token}" />
-    </form>
-
-  </body>
+<div class="link-container green-background">
+  <a href="${pageContext.request.contextPath}/courses">학년별 이수학점 조회</a>
+</div>
+<div class="link-container purple-background">
+  <a href="${pageContext.request.contextPath}/createEnrolment">수강신청 하러가기</a>
+</div>
+<div class="link-container sky-background">
+  <a href="${pageContext.request.contextPath}/enrolments">수강신청 현황 보기</a>
+</div>
+</body>
 </html>

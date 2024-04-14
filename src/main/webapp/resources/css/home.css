@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* 헤더가 포함된 경우의 스타일 */
+.header + * {
+    padding-top: 60px; /* 헤더 높이에 따라 조절 */
+}
+
+.img-container {
+    text-align: center;
+    margin: auto; /* 수평 마진을 자동으로 설정하여 가운데 정렬 */
+}
+
+/* 링크를 감싸는 div 스타일 */
+.link-container {
+    border-radius: 15px; /* 둥근 모서리 */
+    padding: 20px; /* 안쪽 여백 */
+    margin: 10px 0; /* 위아래 간격 */
+    color: white; /* 글자 색상 */
+    text-align: center; /* 텍스트 가운데 정렬 */
+}
+
+/* 배경색 지정 */
+.green-background {
+    background-color: #28a745; /* 초록색 */
+}
+
+.purple-background {
+    background-color: #6f42c1; /* 보라색 */
+}
+
+.sky-background {
+    background-color: #17a2b8; /* 하늘색 */
+}
+
+/* 링크 스타일 */
+.link-container a {
+    text-decoration: none; /* 밑줄 제거 */
+    color: white; /* 글자 색상 */
+    font-weight: bold; /* 글자 굵게 */
+    display: block; /* 링크를 블록 요소로 */
+    margin: 10px 0; /* 링크 사이의 여백 */
+}

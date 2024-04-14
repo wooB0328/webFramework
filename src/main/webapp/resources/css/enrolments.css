@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.enrolments-table {
+    width: 70%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.enrolments-table th {
+    background-color: #17a2b8;
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.enrolments-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.enrolments-table tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+.enrolments-table tr:nth-child(even) {
+    background-color: #eeeeee;
+}

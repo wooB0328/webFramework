@@ -1,0 +1,46 @@
+.header {
+    display: flex;
+    justify-content: space-between; /* 요소들을 양쪽 끝으로 배치 */
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #f4f4f4;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%; /* 헤더가 전체 너비를 차지하도록 설정 */
+}
+
+.header-logo img {
+    height: 70px; /* Adjust as needed */
+}
+
+.title {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%); /* 타이틀을 정확히 중앙에 배치 */
+    font-size: 24px;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+}
+
+.right a,
+.right span {
+    margin-right: 50px; /* 요소들 사이의 공간 */
+}
+
+.auth-button {
+    display: inline-block; /* 버튼을 인라인 블록 요소로 설정 */
+    padding: 10px 15px; /* 버튼 내부 패딩 */
+    margin: 10px 0; /* 버튼 위아래 마진 */
+    border-radius: 20px; /* 버튼 모서리 둥글게 */
+    background-color: #0056b3; /* 버튼 배경색 */
+    color: white; /* 버튼 글자색 */
+    text-decoration: none; /* 텍스트 밑줄 제거 */
+    transition: background-color 0.3s, transform 0.3s; /* 배경색과 변환에 대한 전환 효과 */
+}
+
+.auth-button:hover {
+    background-color: #003d82; /* 버튼 호버 배경색 */
+    transform: scale(1.05); /* 버튼을 조금 더 크게 만듦 */
+}

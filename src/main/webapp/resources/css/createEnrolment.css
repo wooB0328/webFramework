@@ -1,0 +1,50 @@
+/* 기본 바디 스타일 */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* 폼 테이블 스타일 */
+.form-table {
+    width: 80%;
+    margin: 20px auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-collapse: collapse;
+    margin-top: 40px;
+}
+
+.form-table td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd; /* Light grey border */
+    text-align: center; /* 텍스트를 가운데 정렬 */
+}
+
+.form-control {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.submit-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #6f42c1; /* 초록색 배경 */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: #6129c7; /* 짙은 초록색 */
+}
+
+.error {
+    color: red; /* 오류 메시지의 글씨 색상을 빨간색으로 설정 */
+    font-size: 0.8em; /* 글씨 크기를 줄여서 더 작게 표시 */
+    margin-top: 5px; /* 입력 필드와 오류 메시지 사이의 공간을 조정 */
+}
